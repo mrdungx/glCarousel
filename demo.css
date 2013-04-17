@@ -1,6 +1,9 @@
 body {font-family:arial; font-size:14px;}
 ul {margin:0; padding:0; list-style:none;}
-.gl-carousel ul li {width:600px;}
+#carousel-1 li {width:600px;}
+#carousel-2 li {width:600px;}
+#carousel-3 li {width:150px;}
+#carousel-3 li img {width:150px; height:100px;}
 .gl-carousel-pagination li {display:inline-block; margin:0 10px 0 0;}
 .gl-carousel-pagination li.active {font-weight:bold; color:red;}
 body > div {margin:0 0 20px;}
