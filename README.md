@@ -1,9 +1,21 @@
 glCarousel
 ==========
+Yet another jQuery plugin for carousels!
 
-### Live demo
+## Features
+* Slide through items in a list
+* Auto-play
+* Loop back when the last item is reached
+* Pagination
 
-### Usage
+## Why will you like this
+* Minimal CSS (requires only 3 lines of CSS to work). 
+* Unobstructive and easily customisable to your own UI.
+
+## Live demo
+[View live demo](http://mrdungx.net/github/glcarousel/demo.html)
+
+## Usage
 Default
 ```
 $('#carousel-1').glCarousel();
