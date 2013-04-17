@@ -20,6 +20,9 @@
 				<img src="sample-images/glue2.jpg" alt="Slide image" />
 			</li>
 			<li>
+				<iframe width="600" height="400" src="http://www.youtube.com/embed/1LsHr4BPvL8?list=UUgr6_mOS4b-E71CDwyBUR1w" frameborder="0" allowfullscreen></iframe>
+			</li>
+			<li>
 				<img src="sample-images/glue3.jpg" alt="Slide image" />
 			</li>
 			<li>
@@ -37,7 +40,7 @@
 		</ul>
 	</div>
 
-	<div style="width: 600px">
+	<div style="width: 450px">
 		<ul id="carousel-2">
 			<li>
 				<img src="sample-images/glue1.jpg" alt="Slide image" />
@@ -60,10 +63,16 @@
 			<li>
 				<img src="sample-images/glue7.jpg" alt="Slide image" />
 			</li>
+			<li>
+				<img src="sample-images/glue4.jpg" alt="Slide image" />
+			</li>
+			<li>
+				<img src="sample-images/glue3.jpg" alt="Slide image" />
+			</li>
 		</ul>
 	</div>
 
-	<div style="width: 450px">
+	<div style="width: 600px">
 		<ul id="carousel-3">
 			<li>
 				<img src="sample-images/glue1.jpg" alt="Slide image" />
@@ -86,12 +95,6 @@
 			<li>
 				<img src="sample-images/glue7.jpg" alt="Slide image" />
 			</li>
-			<li>
-				<img src="sample-images/glue4.jpg" alt="Slide image" />
-			</li>
-			<li>
-				<img src="sample-images/glue3.jpg" alt="Slide image" />
-			</li>
 		</ul>
 	</div>
 
@@ -104,19 +107,19 @@
 			$('#carousel-1').glCarousel();
 
 			$('#carousel-2').glCarousel({
-				itemsToScroll: 1,
-				scrollTime: 800,
-				loop: true,
-				interval: 0,
-				pagination: true
-			});
-
-			$('#carousel-3').glCarousel({
 				itemsToScroll: 3,
 				scrollTime: 800,
 				loop: true,
 				interval: 3000,
 				pagination: false
+			});
+
+			$('#carousel-3').glCarousel({
+				itemsToScroll: 1,
+				scrollTime: 800,
+				loop: true,
+				interval: 0,
+				pagination: true
 			});
 		});
 	</script>

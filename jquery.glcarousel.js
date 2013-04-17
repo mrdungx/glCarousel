@@ -40,6 +40,7 @@
 		};
 
 		var goToNextPage = function() {
+			var oldPage = currentPage;
 			if (currentPage < maxPage) 
 				currentPage++
 			else if (options.loop)
@@ -48,11 +49,14 @@
 				if (currentPage == maxPage) $controls.find('a.next').addClass("disabled");
 				if (currentPage == 2) $controls.find("a.prev").removeClass("disabled");
 			}
-			$carousel.stop().animate({left: -(currentPage - 1)*pixelsToScroll}, options.scrollTime);
+			$carousel.stop().animate({left: -(currentPage - 1)*pixelsToScroll}, options.scrollTime, function() {
+				resetYoutubeIframes(oldPage);
+			});
 			if (options.pagination) updatePagination();
 		};
 		
 		var goToPrevPage = function() {
+			var oldPage = currentPage;
 			if (currentPage > 1)
 				currentPage--;
 			else if (options.loop)
@@ -61,7 +65,9 @@
 				if (currentPage == 1) $controls.find('a.prev').addClass("disabled");
 				if (currentPage == (maxPage - 1)) $controls.find("a.next").removeClass("disabled");
 			}
-			$carousel.stop().animate({left: -(currentPage - 1)*pixelsToScroll}, options.scrollTime);
+			$carousel.stop().animate({left: -(currentPage - 1)*pixelsToScroll}, options.scrollTime, function() {
+				resetYoutubeIframes(oldPage);
+			});
 			if (options.pagination) updatePagination();
 		};
 		
@@ -76,7 +82,6 @@
 					else if ($(this).hasClass("prev"))
 						goToPrevPage();
 					if (options.interval > 0) initAutoPlay(); // reset the interval when user clicks next/prev
-					resetYoutubeIframes();
 				}
 				e.preventDefault();
 			});
@@ -99,8 +104,8 @@
 			$pagination.children().removeClass('active').eq(currentPage-1).addClass('active');
 		};
 
-		var resetYoutubeIframes = function() {
-			$carouselItems.eq(currentPage-1).find('iframe').each(function() {
+		var resetYoutubeIframes = function(index) {
+			$carouselItems.eq(index-1).find('iframe').each(function() {
 				var $temp = $('<span></span>');
 				$(this).after($temp).detach();
 				$temp.after($(this)).remove();
