@@ -4,9 +4,11 @@ Yet another jQuery plugin for carousels!
 
 ## Features
 * Slide through items in a list
+* You could put any content in a carousel item
 * Auto-play
 * Loop back when the last item is reached
 * Pagination
+* Stop Youtube player in a carousel item if it's no longer in view
 
 ## Why would you like this
 (over the other hundreds of similar plugins around)
