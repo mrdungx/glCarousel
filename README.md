@@ -19,7 +19,7 @@ Yet another jQuery plugin for carousels!
 [View live demo](http://mrdungx.net/github/glcarousel/demo.html)
 
 ## Usage
-Default
+Default:
 ```
 $('#carousel-1').glCarousel();
 ```
