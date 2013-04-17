@@ -8,7 +8,8 @@ Yet another jQuery plugin for carousels!
 * Loop back when the last item is reached
 * Pagination
 
-## Why will you like this
+## Why would you like this
+(over the other hundreds of similar plugins around)
 * Minimal CSS (requires only 3 lines of CSS to work). 
 * Unobstructive and easily customisable to your own UI.
 
@@ -24,7 +25,7 @@ $('#carousel-1').glCarousel();
 
 With pagination:
 ```
-$('#carousel-2').glCarousel({
+$('#carousel-3').glCarousel({
 	itemsToScroll: 1,
 	scrollTime: 800,
 	loop: true,
@@ -34,10 +35,10 @@ $('#carousel-2').glCarousel({
 ```
 
 
-Auto-play, scrolling through 2 items at a time:
+Auto-play, scrolling through 3 items at a time:
 ```
-$('#carousel-3').glCarousel({
-	itemsToScroll: 2,
+$('#carousel-2').glCarousel({
+	itemsToScroll: 3,
 	scrollTime: 800,
 	loop: true,
 	interval: 3000,
