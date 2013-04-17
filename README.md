@@ -8,7 +8,7 @@ Yet another jQuery plugin for carousels!
 * Auto-play
 * Loop back when the last item is reached
 * Pagination
-* Stop Youtube player in a carousel item if it's no longer in view
+* Stop Youtube (and iframe-based) media player within a carousel item if it's no longer in view
 
 ## Why would you like this
 (over the other hundreds of similar plugins around)
