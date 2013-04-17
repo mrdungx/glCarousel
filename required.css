@@ -1,0 +1,3 @@
+.gl-carousel {overflow:hidden; position:relative; margin:auto;}
+.gl-carousel > ul {float:left; position:relative; list-style:none;}
+.gl-carousel > ul > li {float:left; position:relative;}
