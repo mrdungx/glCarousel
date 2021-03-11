@@ -16,7 +16,7 @@ Yet another jQuery plugin for carousels!
 * Unobstructive and easily customisable to your own UI.
 
 ## Live demo
-[View live demo](http://mrdungx.net/github/glcarousel/demo.html)
+[View live demo](http://mrdungx.d3net.net/github/glcarousel/demo.html)
 
 ## Usage
 Default:
